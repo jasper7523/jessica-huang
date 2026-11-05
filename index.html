@@ -89,13 +89,7 @@ h2 em{font-style:normal;display:block;font-size:26px;letter-spacing:0;color:var(
 @media(min-width:620px){.gallery{grid-template-columns:repeat(3,1fr);gap:14px}}
 .contact .card{display:flex;flex-direction:column;gap:6px}
 .contact .card b{font-weight:500}
-.brief{margin-top:22px}
-.brief .frame{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.brief iframe{display:block;width:100%;height:1750px;border:0}
-@media(min-width:620px){.brief iframe{height:1500px}}
-.brief .ph{padding:28px 20px;color:var(--muted);font-size:14px;text-align:center}
-.brief .alt{font-size:12.5px;color:var(--muted);margin-top:8px}
-.brief .alt a{text-decoration:underline}
+.contact .card .formbtn{align-self:flex-start;margin:4px 0 2px;font-size:13.5px;padding:7px 16px}
 .copy{align-self:flex-start;margin-top:4px;border:1px solid var(--line);background:transparent;border-radius:999px;padding:3px 12px;font:inherit;font-size:12.5px;color:var(--muted);cursor:pointer}
 .copy:hover{border-color:var(--ink);color:var(--ink)}
 .lb-wrap{position:fixed;inset:0;background:rgba(20,19,17,.88);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
@@ -244,7 +238,7 @@ html.en [data-zh]{display:none !important}
         </table>
         <div class="links" style="margin-top:18px">
           <a class="pill lb" href="img/mediakit-public.jpg" target="_blank" rel="noopener" data-zh>看完整試鏡卡</a><a class="pill lb" href="img/mediakit-public.jpg" target="_blank" rel="noopener" data-en>View full comp card</a>
-          <a class="pill" href="#brief" data-prefill="mediakit" data-zh>索取完整 Media Kit</a><a class="pill" href="#brief" data-prefill="mediakit" data-en>Request full media kit</a>
+          <a class="pill" href="https://docs.google.com/forms/d/e/1FAIpQLScfYd1bE-Umh5Uuq2XTqJ6kzUFKxEWTknsqrElWIaPC6NjRkg/viewform?usp=pp_url&amp;entry.2122289599=%E7%B4%A2%E5%8F%96%E5%AE%8C%E6%95%B4+Media+Kit&amp;entry.389912030=%E6%83%B3%E7%B4%A2%E5%8F%96%E5%AE%8C%E6%95%B4+Media+Kit" target="_blank" rel="noopener" data-zh>索取完整 Media Kit ↗</a><a class="pill" href="https://docs.google.com/forms/d/e/1FAIpQLScfYd1bE-Umh5Uuq2XTqJ6kzUFKxEWTknsqrElWIaPC6NjRkg/viewform?usp=pp_url&amp;entry.2122289599=%E7%B4%A2%E5%8F%96%E5%AE%8C%E6%95%B4+Media+Kit&amp;entry.389912030=%E6%83%B3%E7%B4%A2%E5%8F%96%E5%AE%8C%E6%95%B4+Media+Kit" target="_blank" rel="noopener" data-en>Request full media kit ↗</a>
         </div>
       </div>
     </div>
@@ -258,11 +252,7 @@ html.en [data-zh]{display:none !important}
       <div class="card"><b>Instagram</b><a href="https://www.instagram.com/soymilk427/" target="_blank" rel="noopener">@soymilk427</a><p data-zh>私訊最快。</p><p data-en>DM is fastest.</p></div>
       <div class="card"><b>Facebook</b><a href="https://www.facebook.com/profile.php?id=100063905510401" target="_blank" rel="noopener" data-zh>豆漿妹 Jessica 粉絲專頁</a><a href="https://www.facebook.com/profile.php?id=100063905510401" target="_blank" rel="noopener" data-en>Facebook page</a><p data-zh>貼文與活動資訊。</p><p data-en>Posts and event updates.</p></div>
       <div class="card"><b>Email</b><a href="mailto:c912106mouse@yahoo.com.tw?subject=%E5%90%88%E4%BD%9C%E6%B4%BD%E8%A9%A2" id="mail">c912106mouse@yahoo.com.tw</a><p data-zh>合作邀約請附品牌、形式、檔期。</p><p data-en>Please include brand, format and timing.</p><button class="copy" id="copyMail" type="button"><span data-zh>複製 Email</span><span data-en>Copy email</span></button></div>
-      <div class="card"><b data-zh>合作表單</b><b data-en>Brief form</b><a href="#brief" data-zh>填寫合作需求 ↓</a><a href="#brief" data-en>Send a brief ↓</a><p data-zh>兩分鐘填完，我會在 3 個工作天內回覆。</p><p data-en>Takes two minutes. I reply within 3 business days.</p></div>
-    </div>
-    <div class="brief" id="brief">
-      <div class="frame"><div class="ph" id="formPh"><span data-zh>表單載入中…</span><span data-en>Loading form…</span></div><iframe id="formFrame" title="合作表單 Brief form" loading="lazy" hidden></iframe></div>
-      <p class="alt" id="formAlt" hidden><span data-zh>表單沒出現？</span><span data-en>Form not showing?</span> <a id="formLink" href="#" target="_blank" rel="noopener"><span data-zh>開新分頁填寫</span><span data-en>Open in a new tab</span></a></p>
+      <div class="card"><b data-zh>合作表單</b><b data-en>Brief form</b><a class="pill fill formbtn" href="https://docs.google.com/forms/d/e/1FAIpQLScfYd1bE-Umh5Uuq2XTqJ6kzUFKxEWTknsqrElWIaPC6NjRkg/viewform" target="_blank" rel="noopener" data-zh>填寫合作表單 ↗</a><a class="pill fill formbtn" href="https://docs.google.com/forms/d/e/1FAIpQLScfYd1bE-Umh5Uuq2XTqJ6kzUFKxEWTknsqrElWIaPC6NjRkg/viewform" target="_blank" rel="noopener" data-en>Open brief form ↗</a><p data-zh>兩分鐘填完，我會在 3 個工作天內回覆。</p><p data-en>Takes two minutes. I reply within 3 business days.</p></div>
     </div>
   </div>
 </section>
@@ -284,24 +274,11 @@ const brands = [
 ];
 document.getElementById("brandWall").innerHTML = brands.map(b=>`<span>${b}</span>`).join("");
 
-// ====== 合作表單設定：Google 表單建好後填這兩行 ======
-const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScfYd1bE-Umh5Uuq2XTqJ6kzUFKxEWTknsqrElWIaPC6NjRkg/viewform";
-const PREFILL_MEDIAKIT = "https://docs.google.com/forms/d/e/1FAIpQLScfYd1bE-Umh5Uuq2XTqJ6kzUFKxEWTknsqrElWIaPC6NjRkg/viewform?usp=pp_url&entry.2122289599=%E7%B4%A2%E5%8F%96%E5%AE%8C%E6%95%B4+Media+Kit&entry.389912030=%E6%83%B3%E7%B4%A2%E5%8F%96%E5%AE%8C%E6%95%B4+Media+Kit";
-
-function embedUrl(u){ if(!u) return ""; return u + (u.includes("?") ? "&" : "?") + "embedded=true"; }
-const frame=document.getElementById("formFrame"), ph=document.getElementById("formPh"), alt=document.getElementById("formAlt"), flink=document.getElementById("formLink");
-function loadForm(u){
-  if(!u){ ph.innerHTML='<span data-zh>合作表單準備中，請先用 Email 或 IG 私訊聯絡。</span><span data-en>The brief form is coming soon. Please email or DM on Instagram for now.</span>'; return; }
-  frame.src=embedUrl(u); frame.hidden=false; ph.hidden=true; flink.href=u; alt.hidden=false;
-}
-loadForm(FORM_URL);
-
 // 頁內連結一律用捲動（在預覽框、嵌入頁裡也能動）
 document.addEventListener("click", e=>{
   const a=e.target.closest('a[href^="#"]'); if(!a) return;
   const id=a.getAttribute("href").slice(1); const el=id && document.getElementById(id); if(!el) return;
   e.preventDefault();
-  if(a.dataset.prefill==="mediakit" && PREFILL_MEDIAKIT){ loadForm(PREFILL_MEDIAKIT); }
   el.scrollIntoView({behavior:"smooth", block:"start"});
 });
 
