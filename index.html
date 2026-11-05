@@ -73,6 +73,7 @@ h2 em{font-style:normal;display:block;font-size:26px;letter-spacing:0;color:var(
 
 .brands{display:flex;flex-wrap:wrap;gap:8px}
 .brands span{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:13.5px}
+h3.sub{font-size:13px;font-weight:500;color:var(--muted);letter-spacing:.08em;margin:18px 0 10px}
 .note{font-size:12.5px;color:var(--muted);margin-top:14px}
 
 .kit{display:grid;gap:22px;align-items:start}
@@ -139,7 +140,7 @@ html.en [data-zh]{display:none !important}
       </div>
       <div class="facts">
         <div><b>1.1 萬</b><span data-zh>IG 追蹤</span><span data-en>IG FOLLOWERS</span></div>
-        <div><b>45+</b><span data-zh>2026 品牌合作</span><span data-en>BRANDS IN 2026</span></div>
+        <div><b>50+</b><span data-zh>2026 品牌合作</span><span data-en>BRANDS IN 2026</span></div>
         <div><b>中 / 英 / 日</b><span data-zh>語言（日 N2）</span><span data-en>ZH / EN / JA (N2)</span></div>
       </div>
     </div>
@@ -203,7 +204,7 @@ html.en [data-zh]{display:none !important}
   <div class="wrap">
     <h2>Experience<em data-zh>經歷</em><em data-en>Experience</em></h2>
     <ul class="timeline">
-      <li><div class="yr">2026</div><div class="what"><b data-zh>品牌短影音與商業合作拍攝</b><b data-en>Brand short-form video &amp; commercial shoots</b><span data-zh>2026 年累計 45 個以上品牌合作：美妝保養、醫美（台灣、首爾、釜山）、餐飲、旅宿、生活用品與健身。</span><span data-en>45+ brand collaborations in 2026: beauty, aesthetics (Taiwan, Seoul, Busan), F&amp;B, hospitality, lifestyle and fitness.</span></div></li>
+      <li><div class="yr">2026</div><div class="what"><b data-zh>品牌短影音與商業合作拍攝</b><b data-en>Brand short-form video &amp; commercial shoots</b><span data-zh>2026 年累計 50 個以上品牌合作：美妝保養、醫美（台灣、首爾、釜山）、餐飲、旅宿、生活用品與健身。</span><span data-en>50+ brand collaborations in 2026: beauty, aesthetics (Taiwan, Seoul, Busan), F&amp;B, hospitality, lifestyle and fitness.</span></div></li>
       <li><div class="yr">2021–2025</div><div class="what"><b data-zh>臺北市政府</b><b data-en>Taipei City Government</b><span data-zh>民政局、停車管理工程處。正式場合溝通協調、文書與對外應對。</span><span data-en>Department of Civil Affairs; Parking Management and Development Office. Formal communication, coordination and public-facing work.</span></div></li>
       <li><div class="yr">—</div><div class="what"><b data-zh>Diageo Taiwan VIP／酒類品牌推廣</b><b data-en>Diageo Taiwan VIP / spirits brand promotion</b><span data-zh>活動與消費者接觸場合的產品與品牌介紹。</span><span data-en>Product and brand presentation at events and consumer touchpoints.</span></div></li>
       <li><div class="yr">—</div><div class="what"><b data-zh>展場與品牌活動</b><b data-en>Trade shows &amp; brand events</b><span data-zh>現場互動、產品介紹、品牌推廣。</span><span data-en>On-site interaction, product introduction and brand promotion.</span></div></li>
@@ -214,8 +215,11 @@ html.en [data-zh]{display:none !important}
 
 <section id="brands">
   <div class="wrap">
-    <h2>Brands<em data-zh>合作品牌（2026）</em><em data-en>Brands I've worked with (2026)</em></h2>
+    <h2>Brands<em data-zh>合作品牌</em><em data-en>Brands I've worked with</em></h2>
+    <h3 class="sub">2026</h3>
     <div class="brands" id="brandWall"></div>
+    <h3 class="sub"><span data-zh>更早的合作（2020–2025）</span><span data-en>Earlier (2020–2025)</span></h3>
+    <div class="brands" id="brandWallEarlier"></div>
     <p class="note" data-zh>依合作時間排列。部分為互惠合作。</p>
     <p class="note" data-en>In order of collaboration. Some were gifted collaborations.</p>
   </div>
@@ -272,9 +276,18 @@ const brands = [
  "三不五時養生莊園","酷雪冰息美膚（奈思診所）","手工殿","氫能光感面膜","冰晶亮妍膠原飲","德國 dailli","氧膚","天ㄟ露營車",
  "花予她","三統漢菓子","飛利浦耳機","光泌體","蒔花妝","JS foodies","nu bra","麗貝利",
  "OmO Cafe","灰犀牛心靈空間","肌轉健身","Peipei 精品租包","泌植萃 MEEZ","積雪草","D-DAY 醫美（釜山）","iUNIK",
- "Anden Hud","THE BODY SHOP","Ludeya","Moody","DR.STEPHANIE","HYABELL 艾玻玻尿酸","Lunio"
+ "Anden Hud","THE BODY SHOP","Ludeya","Moody","DR.STEPHANIE","HYABELL 艾玻玻尿酸","泰德院","Lunio",
+ "PENG'S STUDIO","康心美婦診所","TNT 新中式餐酒館","麗珠洋 RXME","Velyb 維麗比（釜山）"
+];
+const brandsEarlier = [
+ "BEEF KING（信義 ATT）","玫瑰莊園 Tal 手足保養","色廊展 2.0","Anillo 護髮","medicube","Adonia Spa","佳醫美人診所","haiggia 口罩",
+ "Malene","ICPHW 解析度面膜","植妍家（敬好生活）","Weitang","大立健康美麗","犀牛盾 RHINOSHIELD","Winning+ 線上英文","@cosme 台灣",
+ "mulawear","溫泡碳酸入浴錠","Wondercore","Omni 足枕","Simply 新普利","AKIMIA","易美仕 EC Smile","安瑟美膚整形外科",
+ "舊振南","全聯 IngreLux 髮之鑰","詩宓診所","LA.VAOLORE","朱銘美術館","G Clinic","OEC 日式關東煮","森歐黎漾",
+ "婕洛妮絲"
 ];
 document.getElementById("brandWall").innerHTML = brands.map(b=>`<span>${b}</span>`).join("");
+document.getElementById("brandWallEarlier").innerHTML = brandsEarlier.map(b=>`<span>${b}</span>`).join("");
 
 // 頁內連結一律用捲動（在預覽框、嵌入頁裡也能動）
 document.addEventListener("click", e=>{
